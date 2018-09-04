@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/fBstyle.css"> <!-- El mio después para que prevalezca -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+
+    <title>TUNED LOTTO</title>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5
+    elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file://
+    -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <section>
+    <div class="container-fluid">
+    <div class="row" >
+        <div class="jumbotron %col-12/%">
+            <hr>
+            <h1>LOTTO MATH</h1>
+            <hr>
+            <h3>Elige el juego que quieras y LOTTO MATH averiguará la combinación ganadora.</h3>
+            <h2>SUERTE!</h2>
+        </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- <div id="info"></div> -->
+
+ <section>
+   <div class="container">
+    <div class="row %col-12/%">
+    <br>
+        <br>
+        <p id="texto-explicativo">LOTTO MATH, gracias a sus algoritmos basados en las estadísticas y
+            en el cálculo de probabilidades tiene la capacidad de acercarse mucho al acierto de la combinación ganadora de cada sorteo.
+            Con LOTTO MATH y con un poco de Suerte podrá hacer realidad sus sueños.</p>
+        <br>
+        <br>
+    </div>
+    </div>
+ </section>
+
+<section id="juegos">
+
+
+    <div class="container"> <!-- FILA DE LA PRIMITIVA -->
+        <div class="row">
+                <div class="%col-12/%" ><img src="images/SBLogo_La_Primitiva.jpg" class="img-responsive" alt="La Primitiva"></div>
+        </div>
+        <div class="row">
+                    <div class="%col-12-6-6-8/%">
+                            <h4 id="resultado_pr">Resultado:</h4>
+                    </div>
+                    <div class="%col-12-6-6-4/%">
+                            <select class="selectores form-control timeline_group" id="timeline_pr" name="timeline_pr">
+                                    <option value="all">Elige un periodo de Tiempo</option>
+                                    <option value="all">Todos los datos</option>
+                                    <option value="anio">Datos del último año</option>
+                                    <option value="six">Datos de los últimos 6 meses</option>
+                                    <option value="three">Datos de los últimos 3 meses</option>
+                            </select>
+                            <button id="boton_primitiva_calcular" type="button"
+                                    class="botones btn btn-primary"
+                                    onclick="llamada_combinacion_primitiva($('#timeline_pr').val())">
+                                    Calcular
+                            </button>
+                    </div>
+        </div>
+        <div class="row">
+            <div class="%col-12/%">
+                <div id="chartPrimitiva" style="height: 300px; width:100%; background-image:url('/image/email.png');"></div>
+            </div>
+        </div>
+	</div> <!-- FIN CONTAINER PRIMITIVA -->
+
+
+    <div class="container"> <!-- FILA DE LA BONOLOTO -->
+            <div class="row">
+                <div class="%col-12/%"><img src="images/SBLogo_Bonoloto.png" class="img-responsive" alt="La Bonoloto"></div>
+            </div>
+            <div class="row">
+                        <div class="%col-12-6-6-8/%">
+                                <h4 id="resultado_bn">Resultado:</h4>
+                        </div>
+                        <div class="%col-12-6-6-4/%">
+                                <select class="selectores form-control timeline_group" id="timeline_bn" name="timeline_bn">
+                                    <option value="all">Elige un periodo de Tiempo</option>
+                                    <option value="all">Todos los datos</option>
+                                    <option value="anio">Datos del último año</option>
+                                    <option value="six">Datos de los últimos 6 meses</option>
+                                    <option value="three">Datos de los últoms 3 meses</option>
+                                </select>
+
+                                <button id="boton_bonoloto_calcular" type="button"
+                                    class="botones btn btn-primary"
+                                    onclick="llamada_combinacion_bonoloto($('#timeline_bn').val())">
+                                    Calcular
+							</button>
+                        </div>
+            </div>
+            <div class="row">
+                <div class="%col-12/%">
+                    <div id="chartBonoloto" style="height: 300px; width:100%;"></div>
+                </div>
+            </div>
+    </div> <!-- FIN CONTAINER BONOLOTO -->
+
+
+
+  <div class="container"> <!-- FILA DE LA Euromillones -->
+      <div class="row">
+            <div class="%col-12/%"><img src="images/SBlogo_euromillones.png" class="img-responsive" alt="Euromillones"></div>
+      </div>
+    <div class="row">
+                <div class="%col-12-6-6-8/%">
+                      <h4 id="resultado_eu">Resultado:</h4>
+                </div>
+                <div class="%col-12-6-6-4/%">
+                        <select class="selectores form-control" id="timeline_eu" name="timeline_eu">
+                                    <option value="all">Elige un periodo de Tiempo</option>
+                                    <option value="all">Todos los datos</option>
+                                    <option value="anio">Datos del último año</option>
+                                    <option value="six">Datos de los últimos 6 meses</option>
+                                    <option value="three">Datos de los últoms 3 meses</option>
+                        </select>
+                        <button id="boton_euromillones_calcular" type="button"
+                                    class="botones btn btn-primary"
+                                    onclick="llamada_combinacion_euromillones($('#timeline_eu').val())">
+                                    Calcular
+                        </button>
+                </div>
+    </div>
+    <div class="row">
+        <div class="%col-12-12-8-8-8/%">
+            <div id="chartEuromillones" style="height: 300px; width:100%;"></div>
+        </div>
+        <div class="%col-12-12-4-4-4/%">
+              <div id="chartEstrellas" style="height: 300px; width:100%;"></div>
+        </div>
+    </div>
+ </div> <!-- FIN CONTAINER EUROMILLONES -->
+
+
+
+ <div class="container"> <!-- FILA DE LA EL GORDO -->
+    <div class="row">
+          <div class="%col-12/%"><img src="images/SBLogo_El_gordo.png" class="img-responsive" alt="El Gordo de la Primitiva"></div>
+    </div>
+    <div class="row">
+                <div class="%col-12-6-6-8/%">
+                        <h4 id="resultado_eg">Resultado:</h4>
+                </div>
+                <div class="%col-12-6-6-4/%">
+                        <select class="selectores form-control" id="timeline_eg" name="timeline_eg">
+                                    <option value="all">Elige un periodo de Tiempo</option>
+                                    <option value="all">Todos los datos</option>
+                                    <option value="anio">Datos del último año</option>
+                                    <option value="six">Datos de los últimos 6 meses</option>
+                                    <option value="three">Datos de los últoms 3 meses</option>
+                        </select>
+                         <button id="boton_elgordo_calcular" type="button"
+                                    class="botones btn btn-primary"
+                                    onclick= "llamada_combinacion_elgordo($('#timeline_eg').val())">
+                                    Calcular
+                        </button>
+                </div>
+    </div>
+    <div class="row">
+        <div class="%col-12-12-8-8-8/%">
+            <div id="chartElGordo" style="height: 300px; width:100%;"></div>
+        </div>
+        <div class="%col-12-12-4-4-4/%">
+          <div id="chartElGordoClave" style="height: 300px; width:100%;"></div>
+        </div>
+    </div>
+ </div> <!-- FIN CONTAINER EL GORDO -->
+
+
+
+</section> <!-- FIN SECTION JUEGOS -->
+
+
+ <!-- SECTION FOOTER -->
+<section id="pie">
+    <div id="footer" class="container">
+        <div class="row text-center">
+            <div class="%col-12">
+                <img id="logo" src="images/FranTosanLogoWhite.png" alt="FRANTOSAN.COM"/>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="%col-12">
+                <a  href="https://www.frantosan.com" target="_blank">[@2018 FRANTOSAN.COM]</a>
+                     <p>Aplicación realizada por Francisco Luís Tocino Gómez</p>
+                     <p>Tecnología Aplicada:<br>
+                     HTML5, CSS3, JavaScript, JQuery,PHP, MySql, PHPmyadmin, Bootstrap3, Sass, Font-Awesome, CanvasJS.com</p>
+                     <p>Base de Datos de sorteos propia actualizada diariamente mediante WebScraping<br>
+                     <a href="php/administrar/login.html" target="_blank">Administrar</a></p>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="%col-12">
+                <a href="https://www.frantosan.com" target="_blank"><i class="fa fa-at"></i></a>
+                <a href="https://www.facebook.com/frantosan/" target="_blank"><i class="fa fa-facebook"></i></a>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="%col-12">
+               	<p>MOBILE VERSION</p>	
+                <img id="qr" class="center-block" src="images/qr_lottomath_med.png">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+      <!-- [javascript CDN]__________________________________________________  -->
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="js/canvasjs.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/ajax_combinacion.js" type="text/javascript"></script>
+    <script src="js/ajax_graficas.js" type="text/javascript"></script>
+    <script src="js/jsgrid.js" type="text/javascript"></script>
+    <script src="js/system-grid.js" type="text/javascript"></script>
+
+</body></html>
+
