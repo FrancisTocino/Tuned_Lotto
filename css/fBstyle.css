@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Lato");
+@import url("https://fonts.googleapis.com/css?family=Lora");
+@media (max-width: 544px) {
+  body {
+    font-family: Lato; }
+
+  .jumbotron {
+    background-image: url(../images/jumbotronimage1920.png);
+    text-align: center; }
+    .jumbotron hr {
+      display: block;
+      border-width: 1px;
+      border-color: #DBC8B6; }
+    .jumbotron h1 {
+      font-size: 500%; }
+    .jumbotron h2 {
+      font-size: 500%; }
+    .jumbotron h3 {
+      font-size: 250%; }
+
+  .selectores {
+    width: auto;
+    float: left; }
+
+  .botones {
+    float: right; }
+
+  #texto-explicativo {
+    font-size: 150%;
+    text-align: justify; }
+
+  #footer {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: #6495ed; }
+    #footer p {
+      border-top: 10px;
+      font-size: 75%;
+      color: white; }
+    #footer i {
+      font-size: 100%;
+      color: white;
+      padding-bottom: 10px; }
+    #footer #logo {
+      height: 80px;
+      width: auto;
+      border-bottom: 5px;
+      padding: 5px;
+      background-color: transparent;
+      border-radius: 5px 5px 5px 5px;
+      -webkit-border-radius: 5px 5px 5px 5px;
+      border: 0px 0px solid #000000; }
+    #footer #logo:hover {
+      background-color: transparent;
+      transform: none; }
+    #footer #qr {
+      visibility: hidden;
+      height: 50px;
+      width: auto;
+      background-color: black;
+      border-radius: 5px 5px 5px 5px;
+      -webkit-border-radius: 5px 5px 5px 5px;
+      border: 0px solid #000000; }
+    #footer a {
+      color: white; }
+    #footer a:hover {
+      color: white; } }
+@media (min-width: 544px) {
+  body {
+    font-family: Lato; }
+
+  .jumbotron {
+    background-image: url(../images/jumbotronimage1920.png);
+    text-align: center; }
+    .jumbotron hr {
+      display: block;
+      border-width: 1px;
+      border-color: #DBC8B6; }
+    .jumbotron h1 {
+      font-size: 500%; }
+    .jumbotron h2 {
+      font-size: 500%; }
+    .jumbotron h3 {
+      font-size: 250%; }
+
+  .selectores {
+    width: auto;
+    float: left; }
+
+  .botones {
+    float: right; }
+
+  #texto-explicativo {
+    font-size: 150%;
+    text-align: justify; }
+
+  #footer {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: #6495ed; }
+    #footer p {
+      border-top: 10px;
+      font-size: 75%;
+      color: white; }
+    #footer i {
+      font-size: 100%;
+      color: white;
+      padding-bottom: 10px; }
+    #footer #logo {
+      height: 80px;
+      width: auto;
+      border-bottom: 5px;
+      padding: 5px;
+      background-color: transparent;
+      border-radius: 5px 5px 5px 5px;
+      -webkit-border-radius: 5px 5px 5px 5px;
+      border: 0px 0px solid #000000; }
+    #footer #logo:hover {
+      background-color: transparent;
+      transform: none; }
+    #footer #qr {
+      visibility: hidden;
+      height: 50px;
+      width: auto;
+      background-color: black;
+      border-radius: 5px 5px 5px 5px;
+      -webkit-border-radius: 5px 5px 5px 5px;
+      border: 0px solid #000000; }
+    #footer a {
+      color: white; }
+    #footer a:hover {
+      color: white; } }
+@media (min-width: 768px) {
+  body {
+    font-family: Lato; }
+
+  .jumbotron {
+    background-image: url(../images/jumbotronimage1920.png);
+    text-align: center; }
+    .jumbotron hr {
+      display: block;
+      border-width: 1px;
+      border-color: #DBC8B6; }
+    .jumbotron h1 {
+      font-size: 500%; }
+    .jumbotron h2 {
+      font-size: 500%; }
+    .jumbotron h3 {
+      font-size: 250%; }
+
+  .selectores {
+    width: auto;
+    float: left; }
+
+  .botones {
+    float: right; }
+
+  #texto-explicativo {
+    font-size: 150%;
+    text-align: justify; }
+
+  #footer {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: #6495ed; }
+    #footer p {
+      border-top: 10px;
+      font-size: 75%;
+      color: white; }
+    #footer i {
+      font-size: 100%;
+      color: white;
+      padding-bottom: 10px; }
+    #footer #logo {
+      height: 80px;
+      width: auto;
+      border-bottom: 5px;
+      padding: 5px;
+      background-color: transparent;
+      border-radius: 5px 5px 5px 5px;
+      -webkit-border-radius: 5px 5px 5px 5px;
+      border: 0px 0px solid #000000; }
+    #footer #logo:hover {
+      background-color: transparent;
+      transform: none; }
+    #footer #qr {
+      visibility: hidden;
+      height: 50px;
+      width: auto;
+      background-color: black;
+      border-radius: 5px 5px 5px 5px;
+      -webkit-border-radius: 5px 5px 5px 5px;
+      border: 0px solid #000000; }
+    #footer a {
+      color: white; }
+    #footer a:hover {
+      color: white; } }
+@media (min-width: 992px) {
+  body {
+    font-family: Lato; }
+
+  .jumbotron {
+    background-image: url(../images/jumbotronimage1920.png);
+    text-align: center; }
+    .jumbotron hr {
+      display: block;
+      border-width: 1px;
+      border-color: #DBC8B6; }
+    .jumbotron h1 {
+      font-size: 500%; }
+    .jumbotron h2 {
+      font-size: 500%; }
+    .jumbotron h3 {
+      font-size: 250%; }
+
+  .selectores {
+    width: auto;
+    float: left; }
+
+  .botones {
+    float: right; }
+
+  #texto-explicativo {
+    font-size: 150%;
+    text-align: justify; }
+
+  #footer {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: #6495ed; }
+    #footer p {
+      border-top: 10px;
+      font-size: 75%;
+      color: white; }
+    #footer i {
+      font-size: 100%;
+      color: white;
+      padding-bottom: 10px; }
+    #footer #logo {
+      height: 80px;
+      width: auto;
+      border-bottom: 5px;
+      padding: 5px;
+      background-color: transparent;
+      border-radius: 5px 5px 5px 5px;
+      -webkit-border-radius: 5px 5px 5px 5px;
+      border: 0px 0px solid #000000; }
+    #footer #logo:hover {
+      background-color: transparent;
+      transform: none; }
+    #footer #qr {
+      visibility: visible;
+      height: 50px;
+      width: auto;
+      background-color: black;
+      border-radius: 5px 5px 5px 5px;
+      -webkit-border-radius: 5px 5px 5px 5px;
+      border: 0px solid #000000; }
+    #footer a {
+      color: white; }
+    #footer a:hover {
+      color: white; } }
+@media (min-width: 1200px) {
+  body {
+    font-family: Lato; }
+
+  .jumbotron {
+    background-image: url(../images/jumbotronimage1920.png);
+    text-align: center; }
+    .jumbotron hr {
+      display: block;
+      border-width: 1px;
+      border-color: #DBC8B6; }
+    .jumbotron h1 {
+      font-size: 500%; }
+    .jumbotron h2 {
+      font-size: 500%; }
+    .jumbotron h3 {
+      font-size: 250%; }
+
+  .selectores {
+    width: auto;
+    float: left; }
+
+  .botones {
+    float: right; }
+
+  #texto-explicativo {
+    font-size: 150%;
+    text-align: justify; }
+
+  #footer {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: #6495ed; }
+    #footer p {
+      border-top: 10px;
+      font-size: 75%;
+      color: white; }
+    #footer i {
+      font-size: 100%;
+      color: white;
+      padding-bottom: 10px; }
+    #footer #logo {
+      height: 80px;
+      width: auto;
+      border-bottom: 5px;
+      padding: 5px;
+      background-color: transparent;
+      border-radius: 5px 5px 5px 5px;
+      -webkit-border-radius: 5px 5px 5px 5px;
+      border: 0px 0px solid #000000; }
+    #footer #logo:hover {
+      background-color: transparent;
+      transform: none; }
+    #footer #qr {
+      visibility: visible;
+      height: 50px;
+      width: auto;
+      background-color: black;
+      border-radius: 5px 5px 5px 5px;
+      -webkit-border-radius: 5px 5px 5px 5px;
+      border: 0px solid #000000; }
+    #footer a {
+      color: white; }
+    #footer a:hover {
+      color: white; } }
+
+/*# sourceMappingURL=fBstyle.css.map */
