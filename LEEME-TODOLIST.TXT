@@ -1,0 +1,73 @@
+RECAPITULANDO.
+--------------
+A 09/10/2020
+
+ =============================
+| EN CUANTO AL WEB.PORTAFOLIO |
+ =============================
+
+http://neuronkey.rf.gd/
+
+[+] Lo primero que hay que hacer es cambiar en el portafolio la direccion de Tuned Lotto
+    para que pille la del dominio de neuronKey no la de 000webhost.
+
+[+] En la sección de tencnología usada hay que quitar "app inventor" por otra cosa como
+     Angular o Ionic y mantener Apache cordova.
+
+[+] Apps? Solo tengo 1 app que es la tunedLotto y otro el juego churrero de los asteroides
+
+[+] Las Webs lo mismo, solo tengo una, tengo que ponerme como un loco a hacer webs 
+    como la Volaera en Wordpress y algunas que me invente como la de los planetas
+	que sea fantasiosa con todo el css que necesite.
+
+[+] En todo caso cambiar el Jumbotrom y poner algo más moderno.
+
+
+
+  ==========================
+ |EN CUANTO WEB.TUNED-LOTTO |
+  ==========================
+
+  CACARUCA
+
+    http://neuronkey.rf.gd/_tunedlotto/
+
+[+] El Tema de Adaptative funciona Correctamente.[OK]
+
+[*] En la web hay que cambiar el Head del letrero  y en el párrafo justo abajo de Lotto Math por Tunedlotto
+    que es lo que se va a quedar. [OK] 
+
+[+] Cambiar la cabecera que está muy vista.
+
+[+] Hay que averiguar de donde vienen los datos. Si es la BD correcta.[OK]
+
+[+] Hay que averiguar si el scraping se hacen correctamente, si coge los
+    datos correctamente e la web de loterias y apuestas del estado.
+
+[+] EN /_tunedlotto/php/importacion/formimportacion.html Está el formulario para hacer las población de las
+    diferentes tablas de la BD a través de la improtación de ficheros csv. Estos ficheros me los descargo desde la 
+    página de lotoideas.com. OJO. los ficheros CSV tienes que estar separados por "," y no por ";"
+
+[+] A la carpeta _tunedlotto/php/importacion/ hay que darle permisos 777 para que el script pueda subir el fichero al servidor
+	(Estamos hablando de linux y de Xampp, no se si esto hay que hacerlo con el hosting de producción)
+
+		forimportacion.html	-> Formulario con css de bootstrap donde se eligen los archivod¡s .csv de las diferentes 
+							   loterias para importar				
+		importacion_bonoloto.php			|
+		importacion_elgordo.php				|
+		importacion_euromillones.php	    |  -> Diferentes scripts de importación. Son llamados desde el formulario.
+		importacion_primitiva.php			|
+
+
+
+
+
+ ===========================
+|EN CUANTO A APP.TUNED-LOTTO |
+ ===========================
+
+[*] Resulta que Phonegap y Phonegap Builder se acaba el 1/10/2020. Así que me tengo que buscar
+    otra plataforma para compilar y que se pueda publicar. En Adobe Phonegap dicen que se puede 
+    seguir con Cordova y también con IONIC.... No sé
+
+
