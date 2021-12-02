@@ -1,0 +1,78 @@
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" type="text/css" href="../../css/general.css">  
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css">
+  </head>
+  
+  <body>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="text-center">Población de las tablas de los distintos sorteos</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 box_form_import" >
+            <h3>Primitiva</h3>
+               <form  role="form" id="formimport" name="formimport" method="post" action="importacion_primitiva.php" enctype="multipart/form-data">
+                    <input class="btn btn-default" type="file" name="NombreFichero" id="NombreFichero" value="Busca" />
+                    <input class="btn btn-success" id="subir" name="submit" type="submit"  value="Importar Datos" />
+                </form>
+          </div>
+          <div class="col-md-6 box_form_import">
+            <h3>Bonoloto</h3>
+                <form role="form" id="formimport" name="formimport" method="post" action="importacion_bonoloto.php" enctype="multipart/form-data">
+                    <div class="form-grup" >
+                        <input class="btn btn-default" type="file" name="NombreFichero" id="NombreFichero" value="Busca" />
+                        <input class="btn btn-success" id="subir" name="submit" type="submit"  value="Importar Datos" />
+                    </div>
+                </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 box_form_import">
+            <h3>Euromillones</h3>
+               <form role="form" class="elementos_formulario" id="formimport" name="formimport" method="post" action="importacion_euromillones.php" enctype="multipart/form-data">
+                    <input class="btn btn-default" type="file" name="NombreFichero" id="NombreFichero" value="Busca" />
+                    <input class="btn btn-success" id="subir" name="submit" type="submit"  value="Importar Datos" />
+                </form>
+          </div>
+          <div class="col-md-6 box_form_import">
+            <h3>El Gordo de la Primitiva</h3>
+                <form role="form" class="elementos_formulario" id="formimport" name="formimport" method="post" action="importacion_elgordo.php" enctype="multipart/form-data">
+                    <input class="btn btn-default" type="file" name="NombreFichero" id="NombreFichero" value="Busca" />
+                    <input class="btn btn-success" id="subir" name="submit" type="submit"  value="Importar Datos" />
+                </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p class="text-center">Los archivos subidos deben estar en formato CSV separados por ";" y sin cabecera</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  </body>
+</html>

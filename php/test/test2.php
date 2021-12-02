@@ -1,0 +1,14 @@
+<?php
+
+
+/* ESTE TEST ES PARA AVERIGUAR LA IP 
+LOCAL DE LA MAQUINA ASÍ CONTROLAR
+LOS DATOS DE CONEXION SI EN LOCAL
+O SERVIDOR EXTERIOR
+*/
+
+$ip = getHostByName(getHostName());
+
+echo ($ip);
+
+?>

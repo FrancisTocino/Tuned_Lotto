@@ -1,0 +1,88 @@
+
+
+// -------------------------ARBOL ELEMENTOS DOM ------------------------/
+@mixin  tuned-lotto-DOM($mapa){
+
+    body{
+        font-family : map-get($mapa,body-tipografia);
+    } 
+
+    .jumbotron{
+		    background-image : map-get($mapa,jumbo-background-image);
+        text-align: map-get($mapa,jumbo-text-align);
+        hr { 
+            display     : map-get($mapa,jumbo-hr-display);
+            border-width: map-get($mapa,jumbo-hr-border-width);
+            border-color: map-get($mapa,jumbo-hr-border-color);
+        }
+        h1{font-size : map-get($mapa,jumbo-h1-Font-Size);}
+        h2{font-size : map-get($mapa,jumbo-h2-Font-Size);}
+        h3{font-size : map-get($mapa,jumbo-h3-Font-Size);}
+        
+    }
+
+    .selectores{
+      width: map-get($mapa,select-width);
+      float: map-get($mapa,select-float);
+    }
+
+    .botones{
+      float: map-get($mapa,boton-float);
+    }
+
+
+    #texto-explicativo{
+        font-size  : map-get($mapa,text-expl-font-size);
+        text-align : map-get($mapa,text-expl-text-align);
+    }
+      
+    #footer{
+        padding-bottom   : map-get($mapa,footer-padding-bottom);
+        padding-top      : map-get($mapa,footer-padding-top);
+        background-color : map-get($mapa,footer-background-color);
+        p{
+          border-top: map-get($mapa,footer-p-border-top);
+          font-size : map-get($mapa,footer-p-font-size);
+          color     : map-get($mapa,footer-p-color);
+        }
+        i{
+          font-size    : map-get($mapa,footer-i-font-size);
+          color        : map-get($mapa,footer-i-color);
+          padding-bottom: map-get($mapa,footer-i-padding-bottom);
+        }
+        #logo{
+          height               : map-get($mapa,footer-logo-height);
+          width                : map-get($mapa,footer-logo-width);
+          border-bottom        : map-get($mapa,footer-logo-border-bottom);
+          padding              : map-get($mapa,footer-logo-padding);
+          background-color     : map-get($mapa,footer-logo-background);
+          border-radius        : map-get($mapa,footer-logo-border-r);
+          -moz-border-radius   : map-get($mapa,footer-logo-moz-border-radius);
+          -webkit-border-radius: map-get($mapa,footer-logo-webkit-border-radius);
+          border               : 0px map-get($mapa,footer-logo-border);
+        }
+        #logo:hover{
+          background-color     : map-get($mapa,footer-logo-hover-background);
+          transform            : map-get($mapa,footer-logo-rotate);
+        }
+        #qr{
+          visibility           : map-get($mapa,footer-qr-visible);
+          height               : map-get($mapa,footer-qr-height);
+          width                : map-get($mapa,footer-qr-width);
+          background-color     : map-get($mapa,footer-qr-background);
+          border-radius        : map-get($mapa,footer-qr-border-r);
+          -moz-border-radius   : map-get($mapa,footer-qr-moz-border-radius);
+          -webkit-border-radius: map-get($mapa,footer-qr-webkit-border-radius);
+          border               : map-get($mapa,footer-qr-border);
+        }
+
+        a {
+          color        : map-get($mapa,footer-a-color);
+        }
+        a:hover {
+          color          : map-get($mapa,footer-a-color);
+        }
+	}
+}
+
+// ------------------------- FIN MIXINS ELEMENTOS DOM ---------------------/

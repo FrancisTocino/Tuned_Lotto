@@ -1,0 +1,63 @@
+// tablet -> mayor que 544px //
+
+
+$tablet-valores: (
+    
+  body-tipografia : Lato,
+  
+  jumbo-text-align: center,
+  jumbo-hr-display : block,
+  jumbo-hr-border-width : 1px,
+  jumbo-hr-border-color : #DBC8B6,  
+  jumbo-h1-Font-Size : 500%,
+  jumbo-h2-Font-Size : 500%,
+  jumbo-h3-Font-Size : 250%,
+  jumbo-background-image :url(../images/jumbotronimage1920.png),
+    
+  text-expl-font-size: 150%,
+  text-expl-text-align: justify,
+
+  select-width: auto,
+  select-float: left,
+
+  boton-float: right,
+    
+  footer-padding-bottom: 20px,
+  footer-padding-top: 20px,
+  footer-background-color: #716617,
+
+  footer-p-border-top:10px,
+  footer-p-font-size: 75%,
+  footer-p-color: white,
+
+  footer-i-font-size: 100%,
+  footer-i-color: white,
+  footer-i-padding-bottom:10px,
+
+  footer-logo-background: transparent,
+  footer-logo-hover-background:transparent,
+  footer-logo-height: 80px,
+  footer-logo-width: auto,
+  footer-logo-border-bottom:5px,
+  footer-logo-padding:5px,
+  footer-logo-border-r: 5px 5px 5px 5px,
+  footer-logo--moz-border-radius: 5px 5px 5px 5px,
+  footer-logo-webkit-border-radius: 5px 5px 5px 5px,
+  footer-logo-border: 0px solid #000000,
+  footer-logo-rotate:none,
+
+  footer-qr-visible:hidden,
+  footer-qr-background: black,
+  footer-qr-hover-background:grey,
+  footer-qr-height: 50px,
+  footer-qr-width: auto,
+  footer-qr-border-bottom:5px,
+  footer-qr-padding:5px,
+  footer-qr-border-r: 5px 5px 5px 5px,
+  footer-qr--moz-border-radius: 5px 5px 5px 5px,
+  footer-qr-webkit-border-radius: 5px 5px 5px 5px,
+  footer-qr-border: 0px solid #000000,
+
+  footer-a-color: white,
+  footer-a-border-bottom:5px,
+);

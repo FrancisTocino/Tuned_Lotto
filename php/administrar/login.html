@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+
+
+    <script>
+        function llamada_ajax_login(usuario, password) {
+            var parametros = {
+                usuario,
+                password
+            };
+            $.ajax({
+                url: './login.php',
+                type: 'post',
+                data: parametros,
+                beforeSend: function() {
+                    //$("#info").html("Comprobando, espere por favor.");
+                },
+                success: function(response) {
+                    if (response.trim() !== 'opciones.html') {
+                        $("#info").show();
+                    } else {
+                        window.location.href = response;
+                    }
+
+                }
+            });
+        };
+    </script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center">ADMINISTRACION</h1>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container text-center">
+
+        <div class="row  center-block">
+
+            <h5>Usuario</h5>
+            <input type="text" name="usuario" id="usuario" />
+            <h5>Password</h5>
+            <input type="password" name="password" id="password" />
+
+        </div>
+
+        <div class="row  center-block">
+            <button id="btn_logueo" type="button" class="botones btn btn-primary" onclick="llamada_ajax_login($('#usuario').val(), $('#password').val() )">
+							login
+				</button>
+        </div>
+
+        <div id="info" class="alert alert-danger" role="alert">ERROR: USUARIO/CONTRASEÑA</div>
+
+    </div>
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</body>
+
+</html>

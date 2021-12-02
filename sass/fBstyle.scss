@@ -1,0 +1,41 @@
+//---------------------------- IMPORTS -----------------
+// --------------------------- TYPOGRAFIA --------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Lato|Lato');
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+
+@import 'breakpoints';
+@import 'treeDOM';
+@import 'xmobilesmall';
+@import 'mobilesmall';
+@import 'tablet';
+@import 'desktop';
+@import 'desktoplg';
+
+
+
+
+
+// (INICIO)------------------------ELEMENTOS CON Media Querys  --------------------------*/
+
+
+    @include responsive (xmobilesmall){
+           @include tuned-lotto-DOM($xmobilesmall-valores);   
+    }
+    @include responsive (mobilesmall){
+           @include tuned-lotto-DOM($mobilesmall-valores);              
+    }
+    @include responsive (tablet){
+           @include tuned-lotto-DOM($tablet-valores);              
+    }
+    @include responsive (desktop){
+           @include tuned-lotto-DOM($desktop-valores);            
+    }
+    @include responsive (desktoplg){
+           @include tuned-lotto-DOM($desktoplg-valores);            
+    }      
+    
+
+
+
+
