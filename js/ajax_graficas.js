@@ -79,6 +79,10 @@ function pinta_grafica (cadenajson,valormedio,nombrejuego,id_html){
                 toolTip:{
                     content: "El {x} ha salido {y} veces"
                 },
+			    axisX:{
+        			title: "Números",
+        			interval: 2
+				},
                 axisY:{
                     stripLines:[{
                             value:mediaritmetica,
@@ -91,7 +95,7 @@ function pinta_grafica (cadenajson,valormedio,nombrejuego,id_html){
                 data: [
                     {
                     // Change type to "bar", "area", "spline", "column", pie",etc.
-                    type: "column",
+                    type: "spline",
                     dataPoints : dataPoints,
                     }
                 ]
@@ -121,7 +125,7 @@ function llamada_grafica_primitiva(periodo){
             },
             success:  function (response) {
                     //console.log('=>success Primitiva');
-                    //console.log('=> response: '+response);
+                    console.log('=> response: '+response);
                     $("#resultado_pr").html("Resultado: ");
                     var cadenajson = response.split("&")[0];
                     var valormedio = response.split("&")[1];
